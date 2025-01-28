@@ -18,15 +18,30 @@ def calc (oper,*nums):
             total = total / nums[i] 
             result = total   
     elif oper == "e" :
-        result = math.cos(*nums)
+        for i in range(1,len(nums)):     
+            result = math.cos(nums[i])
+            print(result)
+            nums[i]+1
     elif oper == "f" :
-        result = math.sin(*nums)
+        for i in range(1,len(nums)):     
+            result = math.sin(nums[i])
+            print(result)
+            nums[i]+1
     elif oper == "g" :
-        result = math.log(*nums)
+        for i in range(1,len(nums)):     
+            result = math.log(nums[i])
+            print(result)
+            nums[i]+1
     elif oper == "h" :
-        result = math.sqrt(*nums)
+        for i in range(1,len(nums)):     
+            result = math.sqrt(nums[i])
+            print(result)
+            nums[i]+1
     elif oper == "i" :
-        result = math.cbrt(*nums)
+        for i in range(1,len(nums)):     
+            result = math.cbrt(nums[i])
+            print(result)
+            nums[i]+1
     elif oper == "z" :
         exit()
     else:
